@@ -1,0 +1,260 @@
+.blurred-image {
+  filter: blur(5px); /* Ajuste o valor conforme necessário */
+  transition: filter 0.3s ease-in-out; /* Suaviza a transição se necessário */
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1; 
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 40%;
+  z-index: 2; 
+  background: none; 
+}
+
+.carousel-caption h2 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.carousel-caption .divisor {
+  width: 250px;
+  height: 4px;
+  background-color: #00C9D2;
+  margin: 10px auto;
+}
+
+/* Adicionando um estilo padrão para as setas */
+.carousel .control-arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50px;
+  height: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.nav-button {
+  background-color: #0F928C;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #0F928C;
+}
+
+.specialties-box {
+  text-align: center;
+  padding: 40px;
+}
+
+.specialties-box button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #006465;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.Specialties-title {
+  text-align: center;
+  position: center;
+  color:#006465;
+  font-size: 20px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.Specialties-title .divider {
+  width: 250px;
+  height: 4px;
+  background-color: #00C9D2;
+  margin: 0px auto;
+}
+
+.news-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.news-section h1 {
+  text-align: center;
+  position: center;
+  color:#006465;
+  font-size: 40px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.news-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.news-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 30%;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+}
+
+.news-item p {
+  background-color: #006465;
+  color: white;
+  padding: 40px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 0;
+  }
+
+  .carousel-caption {
+    left: 5%;
+    max-width: 90%;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-caption .divisor {
+    width: 150px;
+  }
+
+  .carousel .control-arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .Specialties-title h1 {
+    font-size: 1.5rem;
+  }
+
+  .specialties-box button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-item {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .news-item p {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Centralizar o slide visível */
+  .carousel .slider-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel .carousel-slider {
+    width: 100% !important;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .carousel-caption h2 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+
+  .carousel .control-arrow {
+    display: none;
+  }
+
+  .Specialties-title h1 {
+    font-size: 1.6rem;
+  }
+  .news-section h1{
+    font-size:1.6rem;
+  }
+
+  .news-item p {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  .carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel .carousel-slider {
+    max-width: 70%;
+  }
+}

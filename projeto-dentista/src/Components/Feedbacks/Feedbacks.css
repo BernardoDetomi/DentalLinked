@@ -1,0 +1,148 @@
+.feedbacks {
+  margin-top: 60px;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.feedback {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  perspective: 1000px;
+  margin: 0 10px;
+  box-shadow: 0 2px 5px rgba(0, 100, 101, 0.4);
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateZ(-20px);
+}
+
+.feedback-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.photo-customer {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.customer {
+  text-align: left;
+  padding-left: 50px;
+}
+
+.name-customer {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.rating-customer {
+  color: #FFD700;
+  text-align: center;
+}
+
+.comment-customer {
+  font-family: var(--fonte-principal);
+  text-align: center;
+  margin-top: 30px;
+  flex-grow: 1;
+}
+
+.slick-slide {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: scale(0.9);
+}
+
+.slick-track {
+  margin-top: 20px;
+}
+
+.slick-current {
+  transform: scale(1.05) translateY(-10px);
+  z-index: 2;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-inactive {
+  opacity: 0.6;
+}
+
+.feedbacks-page h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #006465;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+@media (max-width: 1024px) {
+  .feedback {
+    height: 300px;
+  }
+
+  .photo-customer {
+    width: 80px;
+    height: 80px;
+  }
+
+  .customer {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .feedback {
+    height: 250px;
+    padding: 15px;
+  }
+
+  .feedback-top {
+    padding-top: 5px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .photo-customer {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .customer {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .name-customer {
+    font-size: 1rem;
+    margin-top: 2px;
+  }
+
+  .rating-customer {
+    font-size: 1.2rem;
+    margin: 0px;
+  }
+
+  .comment-customer {
+    margin: 0px;
+    font-size: 0.9rem;
+  }
+  .comment-customer p{
+    margin: 0px;
+  }
+
+  .feedbacks-page h1 {
+    font-size: 1.6rem;
+  }
+}

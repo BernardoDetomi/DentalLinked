@@ -1,0 +1,78 @@
+.content-text {
+  font-family: Arial Narrow;
+  position: relative;
+  z-index: 1;
+  color:white;
+  font-size: 30px;
+  border-radius: 50px;
+}
+
+.content h3 {
+  position: relative;
+  color:white;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.divider {
+  position: relative;
+  border-bottom: 4px solid white;
+  margin: 20px auto;
+  width: 20%;
+}
+  
+.appointment-section{
+  background-image: url('/src/assets/agendeconsulta.png'); 
+   background-size: cover; 
+  background-position: center; 
+  position: relative; 
+  text-align: center;
+  padding: 20px 100px;
+}
+
+.overlay {
+  background-color: rgba(15, 146, 140, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.appointment-button {
+  position: relative;
+  font-family: Arial black;
+  background-color: #006465;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.location-button {
+  background-color: #006465;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .appointment-section {
+    padding: 20px; /* Reduz o espaçamento lateral */
+  }
+
+  .content-text {
+    font-size: 20px; /* Reduz o tamanho da fonte */
+  }
+
+  .appointment-button {
+    font-size: 14px; /* Diminui o tamanho do botão */
+  }
+}

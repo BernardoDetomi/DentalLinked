@@ -1,0 +1,206 @@
+.imagem-banner {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  text-align: left;
+  font-family: Arial black;
+  color: #006465;
+  padding-bottom: 140px;
+}
+
+.contacts h4 {
+  font-family: Inria Serif, bold;
+  font-size: 50px;
+  color: #006465;
+}
+
+.bar {
+  width: 60%;
+  border: 1px inset #006465;
+  opacity: 0.4;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.contact {
+  padding: 100px;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.map {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.map-section {
+  margin-top: 20px;
+}
+
+.map-section h5 {
+  font-family: Inter, bold;
+  font-size: medium;
+  margin: center;
+  text-align: center;
+  align-items: center;
+}
+
+.map-image {
+  background-color: #c4c4c4;
+  height: 200px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.map-container {
+  display: inline-block;
+  border: 5px solid #006465;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-and-hours {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.horario-funcionamento {
+  padding: 45px 0px 0px 50px;
+  flex: 1;
+  max-width: 350px;
+}
+
+.horario-funcionamento table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.horario-funcionamento th,
+.horario-funcionamento td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #006465;
+}
+
+.horario-funcionamento th {
+  background-color: rgb(0, 99, 101, 1);
+  font-weight: bold;
+  color: #fff;
+}
+
+.horario-funcionamento h2 {
+  color: #006465;
+  font-family: Inria Serif, bold;
+  font-size: 30px;
+}
+
+
+@media (max-width: 1024px) {
+  .imagem-banner {
+    height: 100%;;
+  }
+
+  .contact-container {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .horario-funcionamento {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  .map {
+    width: 80%;
+    padding: 20px 0;
+  }
+  .map iframe {
+    width: 100%;
+    height: 300px; 
+    border: 0; 
+  }
+
+  .map-and-hours {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .imagem-banner img {
+    object-fit: contain;
+    width: 100%; 
+  }
+
+  .contact-info {
+    padding-bottom: 80px; 
+    text-align: center;
+  }
+
+  .contacts h4 {
+    font-size: 40px;
+  }
+
+  .map {
+    padding: 10px;
+  }
+
+  .horario-funcionamento h2 {
+    font-size: 24px;
+  }
+
+  .bar {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .imagem-banner {
+    height: 100%;
+    padding: 0;
+  }
+  
+  .contact {
+    padding: 50px;
+  }
+
+  .horario-funcionamento {
+    padding: 10px;
+  }
+
+  .horario-funcionamento h2 {
+    font-size: 20px;
+  }
+
+  .map {
+    padding: 5px;
+  }
+}
